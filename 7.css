@@ -1,0 +1,19 @@
+.item {
+    box-sizing: border-box;
+}
+
+.item__mark {
+    box-sizing: border-box; 
+}
+
+img.item__thumb{
+    object-fit: contain;
+}
+
+
+/* 1 задача без border-box*//*
+.rows__cell {
+    flex-basis: 0;
+    flex-grow: 1;
+}*/
+
