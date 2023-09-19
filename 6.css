@@ -3,9 +3,15 @@
     border: 2px solid rgb(110, 69, 143); 
 }
 
-div.block {
-    font-size: 30px !important;
+body {
+    font-size: 30px;
 }
+
+/*
+div.block {
+    font-size: 30px;
+}
+*/
 
 .text2 {
     border: inherit;
