@@ -1,0 +1,39 @@
+.container {
+    position: relative;
+}
+
+.banner {
+    position: relative; 
+}
+
+.banner__wrapper {
+    position: relative;
+}
+
+.banner__content {
+    background-color: rgba(0, 0, 0); 
+    color: white;
+    width: 70%; 
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute; 
+    z-index: 1;
+}
+
+.banner__media {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+}
+
+.banner__img {
+    width: auto; 
+    position: absolute; 
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
