@@ -1,0 +1,88 @@
+/*Задача 1.
+нужно "затемнить" изображения:
+- 1ое, должен быть оттенок красного
+- 2ое, оттенок синего
+- 3ее, оттенок черного цвета
+используем ::before или ::after*/
+
+.grid__media--color1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255 0 0 / 40%)
+}
+
+.grid__media--color2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 0 255 / 40%)
+}
+
+.grid__media--color3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 40%)
+}
+
+/*Задача 2.
+измените цвет выделенного текста с помощью псевдоэлемента ::selection*/
+
+::selection {
+    background-color: mediumslateblue; 
+}
+
+/*Задача 3.
+поменяйте цвет placeholder в форме на красный
+добавить стили к инпуту с атрибутом disabled и readonly, через псвевдоклассы
+на свое усмотрение*/
+
+input::placeholder {
+    color: red; 
+}
+
+input:read-only:hover {
+    background-color: lightcyan; 
+}
+
+input:disabled:hover {
+    background-color: lightpink; 
+    cursor: not-allowed; 
+}
+
+/*Задача 4.
+ссылкам которые находятся в списке .list-links
+добавить стили через псвевдоклассы: hover, link, visited, active*/
+
+.list-links__item:hover {
+    text-decoration: underline;
+}
+
+.list-links__item:link {
+    color: red; 
+}
+
+.list-links__item:visited {
+    color: #c9c9c9; 
+}
+
+.list-links__item:active {
+    color: #4CAF50; 
+}
+
+/*Задача 5.
+в таблице, каждую нечетную строчку сделать красной, свойство background-color*/
+
+.table tbody tr:nth-child(odd) {
+    background-color: red; 
+}

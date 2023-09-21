@@ -1,0 +1,114 @@
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+body {
+  margin: 0;
+}
+
+th,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.truncate{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.container{
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.container > * + * {
+    margin-top: 15px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+body{
+    font-family: 'EB Garamond Regular', sans-serif;
+    }
+
+
+/* 5.
+"Если вы также увлечены космосом ...."
+местоимению 'вы', добавьте жирный текст и нижнее подчеркивание, через css*/
+em {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* 6.
+для тегов h1,h2,h3 добавьте css класс
+heading-1, heading-2, heading-3
+добавьте к ним размер шрифта font-size (значение на свое усмотрение, от большего к меньшему), жирность font-weight: 700, можно добавить интерлиньяж line-height
+
+heading-1, добавьте межбуквенное расстояние, через letter-spacing, значение выбирайте на свое усмотрение, сделать чтоб текст был по центру через text-align, добавить границы - border, добавить внутренний отступ
+heading-2, добавить цвет через color
+heading-3, добавить цвет через color */
+
+.heading-1 {
+    letter-spacing: 5px;
+    text-align: center;
+    border: 1px solid purple;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.heading-2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: darkslateblue; 
+}
+
+.heading-3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: rebeccapurple; 
+    padding-top: 10px;
+}
+
+/* 7.
+в div'е с классом words, находится очень большое слово, которое выходит за пределы контейнера, нужно настроить перенос строк  */
+
+.words {
+    word-wrap: break-word;
+}
+
+/* 8. добавить к таблице границы, для этого в th и td нужно добавить css свойство border */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 3px;
+    text-align: center;
+}
