@@ -1,0 +1,20 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.chars-block__header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    height: 100px;
+
+    display: flex; 
+    align-items: flex-end;
+}
+.chars-block p::first-letter {
+    text-transform: uppercase; 
+}
