@@ -1,0 +1,91 @@
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+body {
+margin: 0;
+}
+
+img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/*ширина экрана >= 576px*/
+@media (min-width: 576px) {
+    .container {
+        max-width: 576px;
+        grid-template-columns: repeat(2, minmax(0, 1fr)); 
+        padding: 0 10px;
+    }
+}
+
+/*ширина экрана >= 768px*/
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding-left: 16px;
+        padding-right: 16px;
+        grid-template-columns: repeat(3, minmax(0, 1fr)); 
+    }
+}
+/*ширина экрана >= 1024px*/
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+        padding-left: 20px;
+        padding-right: 20px;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+/*ширина экрана >= 1292px*/
+@media (min-width: 1292px) {
+    .container {
+        max-width: 1292px;
+        padding-left: 25px;
+        padding-right: 25px;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+}
+
+.color{
+    background-color: red;
+}
+.page{}
+.page__cell{
+    margin-bottom: 30px;
+}
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 20px;
+    padding: 0 15px;
+}
+.gallery__item{
+    height: 200px;
+    background-color: beige;
+}
+
+
+
+
