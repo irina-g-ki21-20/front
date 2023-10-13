@@ -1,0 +1,107 @@
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+body {
+margin: 0;
+}
+
+ol,ul{
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+.heading{
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    background-color: azure;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.container{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.task-list {
+    counter-reset: task-counter;
+    list-style: none;
+    padding: 0;
+}
+  
+.task-list__item {
+    margin-bottom: 10px;
+    padding: 20px;
+    background: #f5f5f5;
+
+    margin-bottom: 10px;
+    padding: 20px;
+    list-style: none; 
+    position: relative;
+}
+  
+.task-list__item::before {
+    counter-increment: task-counter;
+    content: counter(task-counter);
+    margin-right: 10px;
+    font-weight: bold;
+
+    background-color: #cfcece; 
+    color: white;
+    border-radius: 50%;
+    width: 24px; 
+    height: 24px;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-right: 10px;
+}
+  
+.task-list__item:nth-child(2n) {
+    background: white;
+}
+
+.task-list__item:nth-child(3) {
+    counter-set: task-counter 4; 
+}
+
+  
+.list-mark {
+    list-style: none;
+    padding: 0;
+}
+  
+.list-mark__item {
+    padding: 20px;
+    background: #a1d6f1;
+    position: relative;
+}
+  
+.list-mark__item::before {
+    content: "";
+    padding-left: 40px;
+    background: url('icon.svg');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    min-height: 24px;
+    background-position: left;
+}
+  
