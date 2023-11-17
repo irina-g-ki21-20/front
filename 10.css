@@ -49,13 +49,13 @@ body{
     background-color: #fcfcfc;
     border-bottom: 1px solid;
     padding: 5px 0;
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    position: fixed;
 }
 
-.nav{
+.header__nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,16 +65,16 @@ body{
     display: flex;
     gap: 20px;
 }
-.menu a{
+.head__menu_link{
     display: inline-flex;
     font-size: 18px;
     color: #FF5722;
 }
-.menu a:hover{
+.head__menu_link:hover{
     text-decoration: none;
 }
 
-.logo{
+.header__nav-logo{
     width: 200px;
 }
 
@@ -94,7 +94,7 @@ body{
     text-align: center;
     background-color: #b3d6e7;
 }
-.second-header h2{
+.second-header__title{
     padding: 10px;
     margin-bottom: 16px;
 }
@@ -104,7 +104,7 @@ body{
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
 }
-.productsBig{
+.products{
     grid-column: 1 / -1;
 }
 
@@ -114,13 +114,13 @@ body{
     border: 1px solid red;
     padding: 10px;
 }
-.product h3{
+.product__title{
     font-size: 16px;
     font-weight: 700;
     color: red;
     margin-bottom: 12px;
 }
-.product p{
+.product__description{
     color: #4d4d4d;
     font-size: 14px;
     line-height: 20px;
@@ -129,10 +129,10 @@ body{
 .footer{
     background: #607D8B;
 }
-.footer div{
+.footer__container{
     padding: 20px;
 }
-.footer p{
+.footer__text{
     font-size: 32px;
     text-align: center;
     color: white;
